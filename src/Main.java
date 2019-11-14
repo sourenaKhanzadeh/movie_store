@@ -6,6 +6,8 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -17,7 +19,7 @@ import java.sql.*;
 public class Main  extends Application{
 
     final int SCREEN_W = 400;
-    final int SCREEN_H = 100;
+    final int SCREEN_H = 150;
 
     final String TITLE = "Movie Front Store";
 
@@ -42,19 +44,48 @@ public class Main  extends Application{
         root.setHgap(H_GAP);
         root.setVgap(V_GAP);
 
+        // Label for user
+        Label userLabel = new Label();
+        userLabel.setText("Create New: ");
+
+        // add to the root
+        root.add(userLabel, 0, 0);
+
         // create three buttons
         int userManagementNum = 2;
         String userManagementNames[] = {"Admin", "User"};
         Button userManagementBTNS[] = new Button[userManagementNum];
 
-        // create the buttons
-        for (int i = 0; i < userManagementNum; i++) {
-            userManagementBTNS[i] = new Button();
-            userManagementBTNS[i].setText(userManagementNames[i]);
-            root.add(userManagementBTNS[i], i, 0);
+        // create the buttons and add to the root
+        for (int col = 0; col < userManagementNum; col++) {
+            userManagementBTNS[col] = new Button();
+            userManagementBTNS[col].setText(userManagementNames[col]);
+            root.add(userManagementBTNS[col], col, 1);
         }
 
+        // create a sign in label
+        Label sign = new Label();
+        sign.setText("Sign In");
 
+        // add sign to the root
+        root.add(sign, 0, 2);
+
+        // username text box to sign in
+        TextField username = new TextField();
+        Label user = new Label();
+        user.setText("Username: ");
+
+        // add text box to the root
+        root.add(user, 0, 3);
+        root.add(username, 1, 3, 2, 1);
+
+        // sign in button
+        Button signBTN = new Button();
+        signBTN.setText("Sign In");
+        signBTN.setAlignment(Pos.BASELINE_RIGHT);
+
+        // add the button
+        root.add(signBTN, 2, 4);
 
         // create a new scene
         Scene scene = new Scene(root, SCREEN_W, SCREEN_H);
