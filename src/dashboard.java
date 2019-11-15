@@ -217,8 +217,8 @@ public class Dashboard extends Application {
         GridPane.setHalignment(create, HPos.CENTER);
 
         // create a list of label and textfield
-        String attributes[] = {"Name: ", "Length: ", "Description: ", "Genre: ", "MaturityRating: ", "ReleaseDate: "};
-        TextField fields[] = new TextField[attributes.length];
+        String attributes[] = {"Name: ", "Length: ", "Description: ", "Genre: ","Sell Price:", "MaturityRating: ", "ReleaseDate: "};
+        final TextField fields[] = new TextField[attributes.length];
 
 
         // create them
@@ -238,7 +238,7 @@ public class Dashboard extends Application {
         grid.add(productType,0, attributes.length + 1);
 
         // create a choice box
-        ChoiceBox cb = new ChoiceBox();
+        final ChoiceBox cb = new ChoiceBox();
         cb.setItems(FXCollections.observableArrayList(
                         "Movie", "Music", "TV Series")
         );
@@ -252,6 +252,51 @@ public class Dashboard extends Application {
 
 
         // if create is clicked
+        createBTN.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try{
+                    // add user to the database
+                    Class.forName("oracle.jdbc.driver.OracleDriver");
+                    Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "root");
+                    System.out.println("Successfully Connected to the database.... " + con.toString());
+
+                    Statement stmt = con.createStatement();
+
+                    // generate random id
+                    int id = (int) (Math.random() * 9999999 + 100000);
+
+                    stmt.executeUpdate("INSERT INTO product " +
+                            "(ProductID, Name, Length, Description, Genre, SellPrice, MaturityRating, ReleaseDate)" +
+                            "VALUES("+ id +
+                            ", '" + fields[0].getText() + "'" +
+                            ", " + fields[1].getText() +
+                            ", '" + fields[2].getText()+"'" +
+                            ", '" + fields[3].getText() + "'" +
+                            ", " + fields[4].getText() +
+                            ", '" + fields[5].getText() + "'"+
+                            ", TO_DATE('" + fields[6].getText()+ "'" +
+                            ", 'yyyy/mm/dd'))");
+
+                    // check if product is movie/Tv_serenes/music
+                    if(cb.getValue().equals("Movie")){
+                        stmt.executeUpdate("INSERT INTO movie(MovieID)" +
+                                "VALUES(" + id + ")");
+                    }else if(cb.getValue().equals("Music")){
+                        stmt.executeUpdate("INSERT INTO music(SongID)" +
+                                "VALUES(" + id + ")");
+                    }else{
+                        stmt.executeUpdate("INSERT INTO tvseries(SeriesID)" +
+                                "VALUES(" + id + ")");
+                    }
+
+                    System.out.println("product added to the database.....");
+
+                }catch (Exception e){
+                    System.out.println("Could not connect to the database....." + e);
+                }
+            }
+        });
 
         GridPane.setHalignment(createBTN, HPos.CENTER);
         grid.add(createBTN, 0, attributes.length + 2);
@@ -315,6 +360,19 @@ public class Dashboard extends Application {
             });
         }
 
+        // create a product button
+        Button product = new Button("Product");
+
+        // show all products if product btn is clicked
+        product.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                dashboard.getChildren().clear();
+            }
+        });
+
+        options.getChildren().add(product);
+
         return options;
     }
 
@@ -335,6 +393,10 @@ public class Dashboard extends Application {
         root.add(back, 0, 1, 2, 1);
 
         return back;
+
+    }
+
+    void queryProducts(){
 
     }
 
