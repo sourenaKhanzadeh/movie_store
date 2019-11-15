@@ -11,10 +11,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-import java.sql.*;
 
 
 
@@ -33,13 +31,6 @@ public class Main  extends Application{
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
-//        try{
-//            Class.forName("Main Front");
-//            Connection con = DriverManager.getConnection("jdbc:oracle:thin:system/root@localhost:1521/XE");
-//            System.out.println("Successfully Connected to the database.... " + con.toString());
-//        }catch (Exception e){
-//            System.out.println("Could not connect to the database....." + e);
-//        }
 
         // root pane
         GridPane root = new GridPane();

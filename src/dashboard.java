@@ -1,14 +1,12 @@
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -16,7 +14,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-import javax.xml.soap.Text;
 import java.sql.*;
 
 /**
@@ -153,8 +150,8 @@ public class Dashboard extends Application {
         // create Dashboard
         GridPane dashboard = createDashboard();
         dashboard.setAlignment(Pos.CENTER);
-        
-        VBox left = createOptionMenue(dashboard);
+
+        VBox left = createOptionMenu(dashboard);
 
 
         Button back = new Button("Back");
@@ -200,6 +197,8 @@ public class Dashboard extends Application {
     GridPane adminDash(){
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
+        grid.setHgap(5);
+        grid.setVgap(10);
 //        product (ProductID, Name, Length, Description, Genre, SellPrice, MaturityRating, RottenTomatoRating, ReleaseDate)
 
         // create a "Create a new product label"
@@ -214,6 +213,8 @@ public class Dashboard extends Application {
         String attributes[] = {"Name: ", "Length: ", "Description: ", "Genre: ", "MaturityRating: ", "ReleaseDate: "};
         TextField fields[] = new TextField[attributes.length];
 
+
+        // create them
         for (int att = 0; att < attributes.length; att++) {
             Label l = new Label(attributes[att]);
             grid.add(l, 0, att+1);
@@ -225,14 +226,49 @@ public class Dashboard extends Application {
             grid.add(fields[att], 1, att+1);
         }
 
+        // create a label for choice box
+        Label productType = new Label("Product Type: ");
+        grid.add(productType,0, attributes.length + 1);
+
+        // create a choice box
+        ChoiceBox cb = new ChoiceBox();
+        cb.setItems(FXCollections.observableArrayList(
+                        "Movie", "Music", "TV Series")
+        );
+
+
+        grid.add(cb, 1, attributes.length + 1);
+
+        // create a  "create" button
+        Button createBTN = new Button("Create");
+        createBTN.setMinWidth(100);
+
+
+        // if create is clicked
+
+        GridPane.setHalignment(createBTN, HPos.CENTER);
+        grid.add(createBTN, 0, attributes.length + 2);
 
         return grid;
     }
 
-    VBox createOptionMenue(final GridPane dashboard){
+    VBox createOptionMenu(final GridPane dashboard){
         VBox options = new VBox();
         options.setStyle("-fx-background-color: #aabcfd;");
         options.setPadding(new Insets(15, 12, 15, 12));
+        options.setSpacing(10);
+
+        // create a home button
+        Button home = new Button("Home");
+        options.getChildren().add(home);
+
+        // if home is pressed then set dashboard to home
+        home.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                dashboard.getChildren().clear();
+            }
+        });
 
         // create an admin button if user is admin
         if(admin){
@@ -243,7 +279,6 @@ public class Dashboard extends Application {
             admin.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    System.out.println("COOL");
                     dashboard.getChildren().clear();
                     dashboard.add(adminDash(), 0, 0);
                 }
