@@ -3,6 +3,8 @@
  */
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -18,16 +20,17 @@ import java.sql.*;
 
 public class Main  extends Application{
 
-    final int SCREEN_W = 400;
-    final int SCREEN_H = 150;
-
-    final String TITLE = "Movie Front Store";
+    final static int SCREEN_W = 400;
+    final static int SCREEN_H = 150;
+    final static String TITLE = "Movie Front Store";
 
     final double H_GAP = 10;
     final double V_GAP = 10;
 
+    static enum userType {User , Admin}
+
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(final Stage primaryStage) throws Exception {
         try{
 //            Class.forName("Main Front");
             Connection con = DriverManager.getConnection("jdbc:oracle:thin:system/root@localhost:1521:xe");
@@ -62,6 +65,19 @@ public class Main  extends Application{
             userManagementBTNS[col].setText(userManagementNames[col]);
             root.add(userManagementBTNS[col], col, 1);
         }
+
+        // if admin btn is clicked
+        userManagementBTNS[0].setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                User admin = new User(userType.Admin);
+                try {
+                    admin.start(primaryStage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         // create a sign in label
         Label sign = new Label();
