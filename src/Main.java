@@ -31,13 +31,13 @@ public class Main  extends Application{
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
-        try{
+//        try{
 //            Class.forName("Main Front");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:system/root@localhost:1521:xe");
-            System.out.println("Successfully Connected to the database.... " + con.toString());
-        }catch (Exception e){
-            System.out.println("Could not connect to the database....." + e);
-        }
+//            Connection con = DriverManager.getConnection("jdbc:oracle:thin:system/root@localhost:1521/XE");
+//            System.out.println("Successfully Connected to the database.... " + con.toString());
+//        }catch (Exception e){
+//            System.out.println("Could not connect to the database....." + e);
+//        }
 
         // root pane
         GridPane root = new GridPane();

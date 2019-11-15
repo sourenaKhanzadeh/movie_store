@@ -9,11 +9,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-import java.util.List;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 
 
 /**
@@ -74,7 +75,7 @@ public class User extends Application {
     Button menu(GridPane root, String type){
         // make labels and the text field
         String fieldNames[] = {"First Name: ", "Last Name: ", "Email: ", "Username: "};
-        TextField textFields[] = new TextField[fieldNames.length];
+        final TextField textFields[] = new TextField[fieldNames.length];
 
         // create a Heading
         Label welcome = new Label("Welcome " + type);
@@ -97,6 +98,16 @@ public class User extends Application {
         Button submit = new Button("Submit");
         GridPane.setHalignment(submit, HPos.RIGHT);
 
+        final int ty = type.equals("Admin")?1:0;
+
+        // new user is created
+        submit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                addToDataBase(textFields, ty);
+            }
+        });
+
 
         // add button
         root.add(submit, 1, fieldNames.length + 1);
@@ -108,6 +119,45 @@ public class User extends Application {
 
 
         return back;
+    }
+
+
+    void addToDataBase(TextField fields[], int type){
+        try{
+            // add user to the database
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "root");
+            System.out.println("Successfully Connected to the database.... " + con.toString());
+
+            Statement stmt = con.createStatement();
+            int id = (int) (Math.random() * 9999999 + 100000);
+
+        
+            stmt.executeUpdate("INSERT INTO movie_user(USERID, FIRSTNAME, LASTNAME, EMAIL, USERNAME)" +
+                    "VALUES(" +
+                    id + ", '" +
+                    fields[0].getText() + "','" +
+                    fields[1].getText() + "','" +
+                    fields[2].getText() + "','" +
+                    fields[3].getText() + "')");
+
+
+
+            switch (type){
+                case 1:
+                    stmt.executeUpdate("INSERT INTO ADMIN(ADMINID)VALUES(" + id + ")");
+                    break;
+                default:
+                    stmt.executeUpdate("INSERT INTO CUSTOMER(CUSTOMERID)VALUES(" + id + ")");
+                    break;
+
+            }
+
+            System.out.println("Successfully Added To the database.... " + con.toString());
+
+        }catch (Exception e){
+            System.out.println("Could not connect to the database....." + e);
+        }
     }
 
 

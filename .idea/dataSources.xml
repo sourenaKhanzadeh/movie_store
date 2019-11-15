@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1364401545">
+    <data-source source="LOCAL" name="Oracle - @localhost" uuid="e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe">
+      <driver-ref>oracle</driver-ref>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//localhost:1521</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/../../../Owner/Downloads/sqldeveloper/jdbc/lib/ojdbc8.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
