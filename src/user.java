@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -130,9 +131,11 @@ public class User extends Application {
             System.out.println("Successfully Connected to the database.... " + con.toString());
 
             Statement stmt = con.createStatement();
+
+            // generate random id
             int id = (int) (Math.random() * 9999999 + 100000);
 
-        
+            // insert into the database
             stmt.executeUpdate("INSERT INTO movie_user(USERID, FIRSTNAME, LASTNAME, EMAIL, USERNAME)" +
                     "VALUES(" +
                     id + ", '" +
@@ -142,7 +145,7 @@ public class User extends Application {
                     fields[3].getText() + "')");
 
 
-
+            // check if user is admin or regular
             switch (type){
                 case 1:
                     stmt.executeUpdate("INSERT INTO ADMIN(ADMINID)VALUES(" + id + ")");
@@ -152,6 +155,13 @@ public class User extends Application {
                     break;
 
             }
+
+            //Alert the user
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("New User Created");
+            alert.setHeaderText("Success \u263A");
+            alert.setContentText(fields[0].getText() + " Successfully Added To the database");
+            alert.showAndWait();
 
             System.out.println("Successfully Added To the database.... " + con.toString());
 
