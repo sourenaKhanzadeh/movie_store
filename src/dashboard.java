@@ -7,6 +7,11 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -14,6 +19,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.sql.*;
 
 /**
@@ -142,7 +149,7 @@ public class Dashboard extends Application {
         return exitCode;
     }
 
-    Button userExist(BorderPane root){
+    Button userExist(BorderPane root) throws FileNotFoundException {
         //create top menu
         HBox top = createTopMenu();
         HBox bottom = createBottomMenu();
@@ -252,7 +259,23 @@ public class Dashboard extends Application {
         return grid;
     }
 
-    VBox createOptionMenu(final GridPane dashboard){
+    GridPane homeDash() throws FileNotFoundException {
+        GridPane grid = new GridPane();
+        //Passing FileInputStream object as a parameter
+        FileInputStream inputstream = new FileInputStream("D:\\Users\\ProgrammingProjects\\Java\\movie_store_front\\movie_front_logo.png");
+        Image image = new Image(inputstream);
+
+        ImageView imageView = new ImageView(image);
+
+        imageView.setFitHeight(400);
+        imageView.setFitWidth(400);
+
+        grid.add(imageView, 0, 0);
+
+        return grid;
+    }
+
+    VBox createOptionMenu(final GridPane dashboard) throws FileNotFoundException {
         VBox options = new VBox();
         options.setStyle("-fx-background-color: #aabcfd;");
         options.setPadding(new Insets(15, 12, 15, 12));
@@ -262,11 +285,18 @@ public class Dashboard extends Application {
         Button home = new Button("Home");
         options.getChildren().add(home);
 
+        dashboard.add(homeDash(), 0, 0);
+
         // if home is pressed then set dashboard to home
         home.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 dashboard.getChildren().clear();
+                try {
+                    dashboard.getChildren().add(homeDash());
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
