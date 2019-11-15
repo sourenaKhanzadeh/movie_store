@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="" />
     <ignored path="movie_store_front.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,15 +61,16 @@
       <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74027777" vertical-offset="1065" max-vertical-offset="1819">
-              <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.9864865" vertical-offset="878" max-vertical-offset="2074">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1060#1398#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
                 <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
-                <marker date="1573844211706" expanded="true" signature="2086:2134" placeholder="SELECT USERN..MOVIE_USER..." />
-                <marker date="1573844211706" expanded="true" signature="2086:2155" placeholder="SELECT USERN..MOVIE_USER..." />
+                <element signature="e#3974#3975#0" expanded="true" />
+                <element signature="e#4009#4010#0" expanded="true" />
+                <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
+                <marker date="1573846616048" expanded="true" signature="2371:2419" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1573846616048" expanded="true" signature="2371:2440" placeholder="SELECT USERN..MOVIE_USER..." />
               </folding>
             </state>
           </provider>
@@ -94,7 +92,7 @@
       <file leaf-file-name="Oracle - @localhost" pinned="false" current-in-tab="false">
         <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.62069" vertical-offset="544" max-vertical-offset="1411">
+            <state vertical-scroll-proportion="-14.137931" vertical-offset="848" max-vertical-offset="1411">
               <caret line="74" column="15" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
@@ -544,12 +542,12 @@
       <workItem from="1567892649293" duration="8404000" />
       <workItem from="1573762065205" duration="14374000" />
       <workItem from="1573835946929" duration="3268000" />
-      <workItem from="1573839486367" duration="4811000" />
+      <workItem from="1573839486367" duration="7149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30857000" />
+    <option name="totallyTimeSpent" value="33195000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -592,9 +590,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -757,14 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.62069" vertical-offset="544" max-vertical-offset="1411">
-          <caret line="74" column="15" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2125">
@@ -803,17 +793,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.137931" vertical-offset="848" max-vertical-offset="1411">
+          <caret line="74" column="15" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74027777" vertical-offset="1065" max-vertical-offset="1819">
-          <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.9864865" vertical-offset="878" max-vertical-offset="2074">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1060#1398#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
             <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
-            <marker date="1573844211706" expanded="true" signature="2086:2134" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1573844211706" expanded="true" signature="2086:2155" placeholder="SELECT USERN..MOVIE_USER..." />
+            <element signature="e#3974#3975#0" expanded="true" />
+            <element signature="e#4009#4010#0" expanded="true" />
+            <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
+            <marker date="1573846616048" expanded="true" signature="2371:2419" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1573846616048" expanded="true" signature="2371:2440" placeholder="SELECT USERN..MOVIE_USER..." />
           </folding>
         </state>
       </provider>

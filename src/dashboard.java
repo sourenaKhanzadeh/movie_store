@@ -2,12 +2,15 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -23,7 +26,6 @@ public class Dashboard extends Application {
 
     Dashboard(String username){
         this.username = username;
-        // menu screen
 
     }
 
@@ -31,16 +33,24 @@ public class Dashboard extends Application {
     public void start(final Stage primaryStage) throws Exception {
 
         // create a Top menu
-        GridPane root = new GridPane();
 
         boolean check = checkUserExist();
 
         Button back;
+        Scene scene;
 
         if(check){
-           back = userExist();
+            BorderPane root = new BorderPane();
+            back = userExist(root);
+            // create a new scene and set scene
+            scene = new Scene(root, Main.SCREEN_W*2, Main.SCREEN_H*2);
+
         }else{
+            GridPane root = new GridPane();
             back = userNotExits(root);
+            // create a new scene and set scene
+            scene = new Scene(root, Main.SCREEN_W*2, Main.SCREEN_H*2);
+
         }
 
 
@@ -60,8 +70,6 @@ public class Dashboard extends Application {
 
 
 
-        // create a new scene and set scene
-        Scene scene = new Scene(root, Main.SCREEN_W, Main.SCREEN_H);
 
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -112,11 +120,39 @@ public class Dashboard extends Application {
         return exitCode;
     }
 
-    Button userExist(){
+    Button userExist(BorderPane root){
+        //create top menu
+        HBox top = createTopMenu();
+        HBox bottom = createBottomMenu();
 
+        root.setTop(top);
         Button back = new Button("Back");
+        bottom.setAlignment(Pos.BASELINE_RIGHT);
+
+        bottom.getChildren().addAll(back);
+
+        root.setBottom(bottom);
 
         return back;
+    }
+
+    HBox createTopMenu(){
+        HBox box = createMenu();
+        // create a label username
+        Button username = new Button("Welcome, " + getUsername());
+
+        box.getChildren().addAll(username);
+        return box;
+    }
+    HBox createBottomMenu(){
+        return createMenu();
+    }
+
+    HBox createMenu(){
+        HBox box = new HBox();
+        box.setStyle("-fx-background-color: #41bcfd;");
+        box.setPadding(new Insets(15, 12, 15, 12));
+        return box;
     }
 
     Button userNotExits(GridPane root){
