@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dashboard.java" afterPath="$PROJECT_DIR$/src/Dashboard.java" />
-    </list>
+    <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="" />
     <ignored path="movie_store_front.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,7 +42,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2295">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -59,35 +57,43 @@
       <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26770294" vertical-offset="1307" max-vertical-offset="2091">
-              <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.6393211" vertical-offset="551" max-vertical-offset="1258">
+              <caret line="321" column="55" selection-start-line="321" selection-start-column="55" selection-end-line="321" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#start#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
+                <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
+                <element signature="method#createDashboard#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#adminDash#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#homeDash#0;class#Dashboard#0" expanded="false" />
+                <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
-                <element signature="e#10636#11010#0" expanded="true" />
-                <element signature="e#11009#11010#0" expanded="true" />
-                <element signature="e#11272#11526#0" expanded="true" />
-                <element signature="e#11525#11526#0" expanded="true" />
-                <element signature="e#11707#11887#0" expanded="true" />
-                <element signature="e#11886#11887#0" expanded="true" />
-                <marker date="1573858172058" expanded="true" signature="2672:2728" placeholder="SELECT USERN..MOVIE_USER..." />
-                <marker date="1573858172058" expanded="true" signature="2672:2749" placeholder="SELECT USERN..MOVIE_USER..." />
-                <marker date="1573858172058" expanded="true" signature="3669:3709" placeholder="SELECT ADMIN..ADMIN..." />
-                <marker date="1573858172058" expanded="false" signature="7916:8134" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="false" signature="7916:8317" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="true" signature="7916:8438" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="true" signature="7916:8509" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="false" signature="7916:8585" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="false" signature="8755:8825" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="true" signature="8755:8836" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="false" signature="8945:9025" placeholder="INSERT INTO ..." />
-                <marker date="1573858172058" expanded="false" signature="9100:9185" placeholder="INSERT INTO ..." />
+                <element signature="e#10822#11196#0" expanded="true" />
+                <element signature="e#11195#11196#0" expanded="true" />
+                <element signature="e#11458#11712#0" expanded="true" />
+                <element signature="e#11711#11712#0" expanded="true" />
+                <element signature="e#11893#12263#0" expanded="true" />
+                <element signature="e#12262#12263#0" expanded="true" />
+                <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
+                <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
+                <marker date="1573862060617" expanded="true" signature="2672:2728" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1573862060617" expanded="true" signature="2672:2749" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1573862060617" expanded="true" signature="3669:3709" placeholder="SELECT ADMIN..ADMIN..." />
+                <marker date="1573862060617" expanded="false" signature="7916:8134" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="false" signature="7916:8317" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="true" signature="7916:8438" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="true" signature="7916:8509" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="false" signature="7916:8585" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="false" signature="8755:8825" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="true" signature="8755:8836" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="true" signature="8945:9005" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="true" signature="8945:9005" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="false" signature="9080:9165" placeholder="INSERT INTO ..." />
+                <marker date="1573862060617" expanded="true" signature="13556:13580" placeholder="SELECT NAME ..product..." />
               </folding>
             </state>
           </provider>
@@ -96,8 +102,8 @@
       <file leaf-file-name="Oracle - @localhost" pinned="false" current-in-tab="false">
         <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.620689" vertical-offset="406" max-vertical-offset="1445">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="10" />
+            <state vertical-scroll-proportion="-23.241379" vertical-offset="703" max-vertical-offset="1649">
+              <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -106,10 +112,10 @@
       <file leaf-file-name="JdbcOracleConnectionTemplate (2) (1).java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../Owner/Downloads/JdbcOracleConnectionTemplate (2) (1).java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1479">
-              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="596" max-vertical-offset="1479">
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
               </folding>
             </state>
           </provider>
@@ -551,12 +557,12 @@
       <workItem from="1567892649293" duration="8404000" />
       <workItem from="1573762065205" duration="14374000" />
       <workItem from="1573835946929" duration="3268000" />
-      <workItem from="1573839486367" duration="17714000" />
+      <workItem from="1573839486367" duration="20966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43760000" />
+    <option name="totallyTimeSpent" value="47012000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -589,7 +595,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20309168" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20309168" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -599,9 +605,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -612,6 +618,37 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20309168" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -758,32 +795,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Owner/Downloads/JdbcOracleConnectionTemplate (2) (1).java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1479">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie_poster.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#3076#3442#0" expanded="true" />
-            <element signature="e#3441#3442#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movie_front_logo.png">
@@ -805,45 +819,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Owner/Downloads/JdbcOracleConnectionTemplate (2) (1).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="596" max-vertical-offset="1479">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3076#3442#0" expanded="true" />
+            <element signature="e#3441#3442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.620689" vertical-offset="406" max-vertical-offset="1445">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="10" />
+        <state vertical-scroll-proportion="-23.241379" vertical-offset="703" max-vertical-offset="1649">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26770294" vertical-offset="1307" max-vertical-offset="2091">
-          <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.6393211" vertical-offset="551" max-vertical-offset="1258">
+          <caret line="321" column="55" selection-start-line="321" selection-start-column="55" selection-end-line="321" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
             <element signature="method#start#0;class#Dashboard#0" expanded="false" />
             <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
+            <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
+            <element signature="method#createDashboard#0;class#Dashboard#0" expanded="false" />
             <element signature="method#adminDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#homeDash#0;class#Dashboard#0" expanded="false" />
+            <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
-            <element signature="e#10636#11010#0" expanded="true" />
-            <element signature="e#11009#11010#0" expanded="true" />
-            <element signature="e#11272#11526#0" expanded="true" />
-            <element signature="e#11525#11526#0" expanded="true" />
-            <element signature="e#11707#11887#0" expanded="true" />
-            <element signature="e#11886#11887#0" expanded="true" />
-            <marker date="1573858172058" expanded="true" signature="2672:2728" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1573858172058" expanded="true" signature="2672:2749" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1573858172058" expanded="true" signature="3669:3709" placeholder="SELECT ADMIN..ADMIN..." />
-            <marker date="1573858172058" expanded="false" signature="7916:8134" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="false" signature="7916:8317" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="true" signature="7916:8438" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="true" signature="7916:8509" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="false" signature="7916:8585" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="false" signature="8755:8825" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="true" signature="8755:8836" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="false" signature="8945:9025" placeholder="INSERT INTO ..." />
-            <marker date="1573858172058" expanded="false" signature="9100:9185" placeholder="INSERT INTO ..." />
+            <element signature="e#10822#11196#0" expanded="true" />
+            <element signature="e#11195#11196#0" expanded="true" />
+            <element signature="e#11458#11712#0" expanded="true" />
+            <element signature="e#11711#11712#0" expanded="true" />
+            <element signature="e#11893#12263#0" expanded="true" />
+            <element signature="e#12262#12263#0" expanded="true" />
+            <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
+            <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
+            <marker date="1573862060617" expanded="true" signature="2672:2728" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1573862060617" expanded="true" signature="2672:2749" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1573862060617" expanded="true" signature="3669:3709" placeholder="SELECT ADMIN..ADMIN..." />
+            <marker date="1573862060617" expanded="false" signature="7916:8134" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="false" signature="7916:8317" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="true" signature="7916:8438" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="true" signature="7916:8509" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="false" signature="7916:8585" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="false" signature="8755:8825" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="true" signature="8755:8836" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="true" signature="8945:9005" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="true" signature="8945:9005" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="false" signature="9080:9165" placeholder="INSERT INTO ..." />
+            <marker date="1573862060617" expanded="true" signature="13556:13580" placeholder="SELECT NAME ..product..." />
           </folding>
         </state>
       </provider>

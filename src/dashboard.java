@@ -283,8 +283,7 @@ public class Dashboard extends Application {
                         stmt.executeUpdate("INSERT INTO movie(MovieID)" +
                                 "VALUES(" + id + ")");
                     }else if(cb.getValue().equals("Music")){
-                        stmt.executeUpdate("INSERT INTO music(SongID)" +
-                                "VALUES(" + id + ")");
+                        stmt.executeUpdate("INSERT INTO music(SongID, ArtistName)VALUES(" + id + ", ' ')");
                     }else{
                         stmt.executeUpdate("INSERT INTO tvseries(SeriesID)" +
                                 "VALUES(" + id + ")");
@@ -317,6 +316,14 @@ public class Dashboard extends Application {
 
         grid.add(imageView, 0, 0);
 
+        return grid;
+    }
+
+    GridPane productDash() throws FileNotFoundException{
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        queryProducts(grid);
         return grid;
     }
 
@@ -368,6 +375,12 @@ public class Dashboard extends Application {
             @Override
             public void handle(ActionEvent event) {
                 dashboard.getChildren().clear();
+                try {
+                    dashboard.add(productDash(), 0, 0);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+
             }
         });
 
@@ -396,8 +409,86 @@ public class Dashboard extends Application {
 
     }
 
-    void queryProducts(){
+    void queryProducts(GridPane grid){
+        Connection conn1 = null;
+        try {
+            // registers Oracle JDBC driver - though this is no longer required
+            // since JDBC 4.0, but added here for backward compatibility
+            Class.forName("oracle.jdbc.OracleDriver");
 
+
+            //   String dbURL1 = "jdbc:oracle:thin:username/password@oracle.scs.ryerson.ca:1521:orcl";
+
+
+            String dbURL1 = "jdbc:oracle:thin:system/root@localhost:1521:xe";
+
+            conn1 = DriverManager.getConnection(dbURL1);
+            if (conn1 != null) {
+                System.out.println("Connected with connection #1");
+            }
+
+
+
+
+
+            String query = "SELECT NAME FROM product";
+
+            try (Statement stmt = conn1.createStatement()) {
+
+                ResultSet rs = stmt.executeQuery(query);
+
+
+                int i = 0, j= 0;
+                // query all the products
+                while (rs.next()) {
+                    VBox box = new VBox();
+
+                    String name = rs.getString("NAME");
+                    Label nLabel = new Label(name);
+                    try {
+                        FileInputStream inputstream = new FileInputStream("D:\\Users\\ProgrammingProjects\\Java\\movie_store_front\\movie_poster.jpg");
+                        Image image = new Image(inputstream);
+
+                        ImageView imageView = new ImageView(image);
+
+                        imageView.setFitHeight(300);
+                        imageView.setFitWidth(150);
+
+                        box.getChildren().add(imageView);
+
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
+
+                    box.getChildren().add(nLabel);
+                    grid.add(box, j, i);
+                    if(j == 3){i++;j=-1;}
+                    j++;
+
+
+                }
+
+//                grid.add();
+            } catch (SQLException e) {
+                System.out.println(e.getErrorCode());
+            }
+
+
+
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                if (conn1 != null && !conn1.isClosed()) {
+                    conn1.close();
+                }
+
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
     }
 
 }
