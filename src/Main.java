@@ -29,6 +29,8 @@ public class Main  extends Application{
 
     static enum userType {User , Admin}
 
+    //TODO: DOCUMENT PROPERLY
+
     @Override
     public void start(final Stage primaryStage) throws Exception {
 //        try{
@@ -92,6 +94,8 @@ public class Main  extends Application{
         });
 
 
+
+
         // create a sign in label
         Label sign = new Label("Sign In");
 
@@ -99,7 +103,7 @@ public class Main  extends Application{
         root.add(sign, 0, 2);
 
         // username text box to sign in
-        TextField username = new TextField();
+        final TextField username = new TextField();
         Label user = new Label("Username: ");
 
         // add text box to the root
@@ -109,6 +113,19 @@ public class Main  extends Application{
         // sign in button
         Button signBTN = new Button("Sign In");
         signBTN.setAlignment(Pos.BASELINE_RIGHT);
+
+        // user is signing in
+        signBTN.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Dashboard user = new Dashboard(username.getText());
+                try {
+                    user.start(primaryStage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         // add the button
         root.add(signBTN, 2, 4);
