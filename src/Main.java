@@ -20,8 +20,8 @@ import java.sql.*;
 
 public class Main  extends Application{
 
-    final static int SCREEN_W = 400;
-    final static int SCREEN_H = 150;
+    final static int SCREEN_W = 600;
+    final static int SCREEN_H = 300;
     final static String TITLE = "Movie Front Store";
 
     final double H_GAP = 10;
@@ -48,8 +48,7 @@ public class Main  extends Application{
         root.setVgap(V_GAP);
 
         // Label for user
-        Label userLabel = new Label();
-        userLabel.setText("Create New: ");
+        Label userLabel = new Label("Create A New: ");
 
         // add to the root
         root.add(userLabel, 0, 0);
@@ -79,25 +78,36 @@ public class Main  extends Application{
             }
         });
 
+        // if user btn is clicked
+        userManagementBTNS[1].setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                User user = new User(userType.User);
+                try {
+                    user.start(primaryStage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+
         // create a sign in label
-        Label sign = new Label();
-        sign.setText("Sign In");
+        Label sign = new Label("Sign In");
 
         // add sign to the root
         root.add(sign, 0, 2);
 
         // username text box to sign in
         TextField username = new TextField();
-        Label user = new Label();
-        user.setText("Username: ");
+        Label user = new Label("Username: ");
 
         // add text box to the root
         root.add(user, 0, 3);
         root.add(username, 1, 3, 2, 1);
 
         // sign in button
-        Button signBTN = new Button();
-        signBTN.setText("Sign In");
+        Button signBTN = new Button("Sign In");
         signBTN.setAlignment(Pos.BASELINE_RIGHT);
 
         // add the button
