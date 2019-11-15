@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="" />
+    <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movie_poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Dashboard$1.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Dashboard$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Dashboard.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Dashboard.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Users\ProgrammingProjects\Java\movie_store_front\src\dashboard.java" afterPath="$PROJECT_DIR$/src/Dashboard.java" />
+    </list>
     <ignored path="movie_store_front.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,29 +67,19 @@
       <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9864865" vertical-offset="878" max-vertical-offset="2074">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48055556" vertical-offset="1218" max-vertical-offset="3179">
+              <caret line="155" column="8" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
-                <element signature="e#3974#3975#0" expanded="true" />
-                <element signature="e#4009#4010#0" expanded="true" />
+                <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
+                <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
+                <element signature="e#6864#7166#0" expanded="true" />
+                <element signature="e#7165#7166#0" expanded="true" />
                 <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-                <marker date="1573846616048" expanded="true" signature="2371:2419" placeholder="SELECT USERN..MOVIE_USER..." />
-                <marker date="1573846616048" expanded="true" signature="2371:2440" placeholder="SELECT USERN..MOVIE_USER..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2125">
-              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#menu#0;class#User#0" expanded="false" />
+                <marker date="1573850705508" expanded="true" signature="2523:2579" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1573850705508" expanded="true" signature="2523:2600" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1573850705508" expanded="true" signature="3520:3560" placeholder="SELECT ADMIN..ADMIN..." />
               </folding>
             </state>
           </provider>
@@ -92,8 +88,8 @@
       <file leaf-file-name="Oracle - @localhost" pinned="false" current-in-tab="false">
         <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.137931" vertical-offset="848" max-vertical-offset="1411">
-              <caret line="74" column="15" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.896552" vertical-offset="865" max-vertical-offset="1428">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,10 +117,10 @@
       <list>
         <option value="$PROJECT_DIR$/oracle_conn.txt" />
         <option value="$PROJECT_DIR$/src/user.java" />
-        <option value="db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/" />
         <option value="$PROJECT_DIR$/src/User.java" />
         <option value="$PROJECT_DIR$/src/dashboard.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/" />
         <option value="$PROJECT_DIR$/src/Dashboard.java" />
       </list>
     </option>
@@ -221,6 +217,11 @@
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\ProgrammingProjects\Java\movie_store_front" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -542,12 +543,12 @@
       <workItem from="1567892649293" duration="8404000" />
       <workItem from="1573762065205" duration="14374000" />
       <workItem from="1573835946929" duration="3268000" />
-      <workItem from="1573839486367" duration="7149000" />
+      <workItem from="1573839486367" duration="11207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33195000" />
+    <option name="totallyTimeSpent" value="37253000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -590,9 +591,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -622,7 +623,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -755,17 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2125">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#User#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Owner/Downloads/JdbcOracleConnectionTemplate (2) (1).java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1479">
@@ -793,26 +783,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0337837" vertical-offset="513" max-vertical-offset="2125">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#menu#0;class#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.137931" vertical-offset="848" max-vertical-offset="1411">
-          <caret line="74" column="15" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.896552" vertical-offset="865" max-vertical-offset="1428">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/movie_poster.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9864865" vertical-offset="878" max-vertical-offset="2074">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48055556" vertical-offset="1218" max-vertical-offset="3179">
+          <caret line="155" column="8" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
-            <element signature="e#3974#3975#0" expanded="true" />
-            <element signature="e#4009#4010#0" expanded="true" />
+            <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
+            <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
+            <element signature="e#6864#7166#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
             <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-            <marker date="1573846616048" expanded="true" signature="2371:2419" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1573846616048" expanded="true" signature="2371:2440" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1573850705508" expanded="true" signature="2523:2579" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1573850705508" expanded="true" signature="2523:2600" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1573850705508" expanded="true" signature="3520:3560" placeholder="SELECT ADMIN..ADMIN..." />
           </folding>
         </state>
       </provider>

@@ -8,12 +8,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import javax.xml.soap.Text;
 import java.sql.*;
 
 /**
@@ -22,6 +25,9 @@ import java.sql.*;
 public class Dashboard extends Application {
 
     private String username;
+    private boolean admin;
+    private int userID;
+
     final double headerFont = 22;
 
     Dashboard(String username){
@@ -90,10 +96,12 @@ public class Dashboard extends Application {
             // query data
             try (Statement stmt = con.createStatement()) {
 
-                ResultSet rs = stmt.executeQuery("SELECT USERNAME FROM MOVIE_USER WHERE USERNAME='" + getUsername() +"'");
+                ResultSet rs = stmt.executeQuery("SELECT USERID, USERNAME FROM MOVIE_USER WHERE USERNAME='" + getUsername() +"'");
                 rs.next();
                 String user = rs.getString("USERNAME");
+                userID = rs.getInt("USERID");
                 System.out.println(user + " Exist in the database....");
+
 
                 exitCode = true;
 
@@ -110,6 +118,23 @@ public class Dashboard extends Application {
                 exitCode = false;
             }
 
+            // check if user is admin
+            try (Statement stmt = con.createStatement()) {
+
+                ResultSet rs = stmt.executeQuery("SELECT ADMINID FROM ADMIN WHERE ADMINID=" + userID + "");
+                rs.next();
+                rs.getInt("ADMINID");
+                admin = true;
+
+                System.out.println("Welcome Admin, " + getUsername());
+
+            }catch (SQLException e) {
+
+                System.out.println("Welcome User, " + getUsername());
+                admin = false;
+            }
+            System.out.println(userID + ": " + admin);
+
 
 
 
@@ -125,13 +150,23 @@ public class Dashboard extends Application {
         HBox top = createTopMenu();
         HBox bottom = createBottomMenu();
 
-        root.setTop(top);
+        // create Dashboard
+        GridPane dashboard = createDashboard();
+        dashboard.setAlignment(Pos.CENTER);
+        
+        VBox left = createOptionMenue(dashboard);
+
+
         Button back = new Button("Back");
         bottom.setAlignment(Pos.BASELINE_RIGHT);
 
         bottom.getChildren().addAll(back);
 
+        // set Border Pane
+        root.setTop(top);
         root.setBottom(bottom);
+        root.setLeft(left);
+        root.setCenter(dashboard);
 
         return back;
     }
@@ -144,6 +179,7 @@ public class Dashboard extends Application {
         box.getChildren().addAll(username);
         return box;
     }
+
     HBox createBottomMenu(){
         return createMenu();
     }
@@ -153,6 +189,68 @@ public class Dashboard extends Application {
         box.setStyle("-fx-background-color: #41bcfd;");
         box.setPadding(new Insets(15, 12, 15, 12));
         return box;
+    }
+
+    GridPane createDashboard(){
+        GridPane grid = new GridPane();
+
+        return grid;
+    }
+
+    GridPane adminDash(){
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+//        product (ProductID, Name, Length, Description, Genre, SellPrice, MaturityRating, RottenTomatoRating, ReleaseDate)
+
+        // create a "Create a new product label"
+        // admin only
+        Label create = new Label("Create a new product");
+        create.setFont(Font.font(headerFont));
+        grid.add(create, 0, 0, 2, 1);
+
+        GridPane.setHalignment(create, HPos.CENTER);
+
+        // create a list of label and textfield
+        String attributes[] = {"Name: ", "Length: ", "Description: ", "Genre: ", "MaturityRating: ", "ReleaseDate: "};
+        TextField fields[] = new TextField[attributes.length];
+
+        for (int att = 0; att < attributes.length; att++) {
+            Label l = new Label(attributes[att]);
+            grid.add(l, 0, att+1);
+
+            TextField t = new TextField();
+
+            fields[att] = t;
+
+            grid.add(fields[att], 1, att+1);
+        }
+
+
+        return grid;
+    }
+
+    VBox createOptionMenue(final GridPane dashboard){
+        VBox options = new VBox();
+        options.setStyle("-fx-background-color: #aabcfd;");
+        options.setPadding(new Insets(15, 12, 15, 12));
+
+        // create an admin button if user is admin
+        if(admin){
+            Button admin = new Button("Admin");
+            options.getChildren().add(admin);
+
+            // if admin is clicked allow admin to add products
+            admin.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    System.out.println("COOL");
+                    dashboard.getChildren().clear();
+                    dashboard.add(adminDash(), 0, 0);
+                }
+            });
+        }
+
+        return options;
     }
 
     Button userNotExits(GridPane root){
