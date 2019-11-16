@@ -285,8 +285,7 @@ public class Dashboard extends Application {
                     }else if(cb.getValue().equals("Music")){
                         stmt.executeUpdate("INSERT INTO music(SongID, ArtistName)VALUES(" + id + ", ' ')");
                     }else{
-                        stmt.executeUpdate("INSERT INTO tvseries(SeriesID)" +
-                                "VALUES(" + id + ")");
+                        stmt.executeUpdate("INSERT INTO tvseries(SeriesID, Seasons, Episodes, TV_CAST)VALUES(" + id + ", 0, 0, ' ')");
                     }
 
                     System.out.println("product added to the database.....");
@@ -319,12 +318,19 @@ public class Dashboard extends Application {
         return grid;
     }
 
-    GridPane productDash() throws FileNotFoundException{
+    ScrollPane productDash() throws FileNotFoundException{
+        ScrollPane scroll = new ScrollPane();
+
         GridPane grid = new GridPane();
+
+        grid.setPadding(new Insets(10, 10 ,10, 10));
         grid.setHgap(10);
         grid.setVgap(10);
+
         queryProducts(grid);
-        return grid;
+
+        scroll.setContent(grid);
+        return scroll;
     }
 
     VBox createOptionMenu(final GridPane dashboard) throws FileNotFoundException {
@@ -451,8 +457,8 @@ public class Dashboard extends Application {
 
                         ImageView imageView = new ImageView(image);
 
-                        imageView.setFitHeight(300);
-                        imageView.setFitWidth(150);
+                        imageView.setFitHeight(150);
+                        imageView.setFitWidth(100);
 
                         box.getChildren().add(imageView);
 
