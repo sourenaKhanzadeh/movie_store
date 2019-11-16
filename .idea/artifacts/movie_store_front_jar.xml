@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="movie_store_front:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/movie_store_front_jar</output-path>
+    <root id="archive" name="movie_store_front.jar">
+      <element id="module-output" name="movie_store_front" />
+    </root>
+  </artifact>
+</component>
