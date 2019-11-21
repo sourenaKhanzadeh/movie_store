@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -318,7 +319,7 @@ public class Dashboard extends Application {
         return grid;
     }
 
-    ScrollPane productDash() throws FileNotFoundException{
+    ScrollPane productDash(GridPane dashboard) throws FileNotFoundException{
         ScrollPane scroll = new ScrollPane();
 
         GridPane grid = new GridPane();
@@ -327,7 +328,7 @@ public class Dashboard extends Application {
         grid.setHgap(10);
         grid.setVgap(10);
 
-        queryProducts(grid);
+        queryProducts(grid, dashboard);
 
         scroll.setContent(grid);
         return scroll;
@@ -382,7 +383,7 @@ public class Dashboard extends Application {
             public void handle(ActionEvent event) {
                 dashboard.getChildren().clear();
                 try {
-                    dashboard.add(productDash(), 0, 0);
+                    dashboard.add(productDash(dashboard), 0, 0);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
@@ -415,7 +416,7 @@ public class Dashboard extends Application {
 
     }
 
-    void queryProducts(GridPane grid){
+    void queryProducts(GridPane grid, final GridPane dashboard){
         Connection conn1 = null;
         try {
             // registers Oracle JDBC driver - though this is no longer required
@@ -437,7 +438,7 @@ public class Dashboard extends Application {
 
 
 
-            String query = "SELECT NAME FROM product";
+            String query = "SELECT * FROM product";
 
             try (Statement stmt = conn1.createStatement()) {
 
@@ -449,13 +450,22 @@ public class Dashboard extends Application {
                 while (rs.next()) {
                     VBox box = new VBox();
 
-                    String name = rs.getString("NAME");
+                    final String name = rs.getString("NAME");
                     Label nLabel = new Label(name);
                     try {
                         FileInputStream inputstream = new FileInputStream("D:\\Users\\ProgrammingProjects\\Java\\movie_store_front\\movie_poster.jpg");
                         Image image = new Image(inputstream);
 
+
                         ImageView imageView = new ImageView(image);
+
+                        // if image is clicked on
+                        imageView.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                System.out.println(name);
+                            }
+                        });
 
                         imageView.setFitHeight(150);
                         imageView.setFitWidth(100);
