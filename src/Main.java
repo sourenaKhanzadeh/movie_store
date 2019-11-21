@@ -121,6 +121,21 @@ public class Main  extends Application{
         // add the button
         root.add(signBTN, 2, 4);
 
+        // create a btn that allows deletion/creation of the tables
+        Button initBTN = new Button("Initialize/Recreate");
+
+        initBTN.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Initiate init = new Initiate();
+
+                init.initiate();
+            }
+        });
+
+        // add the button
+        root.add(initBTN, 0, 5);
+
         // create a new scene
         Scene scene = new Scene(root, SCREEN_W, SCREEN_H);
 

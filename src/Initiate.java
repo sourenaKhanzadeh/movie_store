@@ -18,7 +18,7 @@ public class Initiate {
             //   String dbURL1 = "jdbc:oracle:thin:username/password@oracle.scs.ryerson.ca:1521:orcl";  // that is school Oracle database and you can only use it in the labs
 
 
-            String dbURL1 = "jdbc:oracle:thin:username/password@localhost:1521:xe";
+            String dbURL1 = "jdbc:oracle:thin:system/root@localhost:1521:xe";
 			/* This XE or local database that you installed on your laptop. 1521 is the default port for database, change according to what you used during installation.
 			xe is the sid, change according to what you setup during installation. */
 
@@ -65,7 +65,7 @@ public class Initiate {
 
     void creteTables(Statement stm) throws SQLException {
         stm.execute("CREATE TABLE movie_user (UserID NUMBER PRIMARY KEY," +
-                "First_Name VARCHAR2(30) NOT NULL," +
+                "FirstName VARCHAR2(30) NOT NULL," +
                 "LastName VARCHAR2(30) NOT NULL," +
                 "Email VARCHAR2(50) NOT NULL," +
                 "Username VARCHAR2(30) NOT NULL )");
@@ -83,14 +83,14 @@ public class Initiate {
         );
 
         stm.execute(
-                "CREATE TABLE product (\n" +
-                        "\tProductID NUMBER PRIMARY KEY,\n" +
-                        "\tName VARCHAR2(50) NOT NULL,\n" +
-                        "\tLength NUMBER NOT NULL,\n" +
-                        "\tDescription VARCHAR2(280),\n" +
-                        "\tGenre VARCHAR2(50),\n" +
-                        "\tSellPrice NUMBER NOT NULL,\n" +
-                        "\tReleaseDate  DATE\n" +
+                "CREATE TABLE product (" +
+                        "ProductID NUMBER PRIMARY KEY," +
+                        "Name VARCHAR2(50) NOT NULL," +
+                        "Length NUMBER NOT NULL," +
+                        "Description VARCHAR2(280)," +
+                        "Genre VARCHAR2(50)," +
+                        "SellPrice NUMBER NOT NULL," +
+                        "ReleaseDate  DATE" +
                         ")"
         );
 
@@ -151,14 +151,14 @@ public class Initiate {
         );
 
         stm.execute(
-                "CREATE TABLE purchases (\n" +
+                "CREATE TABLE purchases (" +
                         "CustomerID NUMBER NOT NULL REFERENCES customer(CustomerID)," +
                         "SubscriptionType VARCHAR2(20) REFERENCES subscription(Type)," +
                         "ProductID NUMBER REFERENCES product(ProductID)," +
                         "DateOfPurchase DATE" +
                         ")"
         );
-
+        System.out.println("Tables reset...");
     }
 
 

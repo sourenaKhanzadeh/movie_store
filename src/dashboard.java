@@ -218,7 +218,7 @@ public class Dashboard extends Application {
         GridPane.setHalignment(create, HPos.CENTER);
 
         // create a list of label and textfield
-        String attributes[] = {"Name: ", "Length: ", "Description: ", "Genre: ","Sell Price:", "MaturityRating: ", "ReleaseDate: "};
+        String attributes[] = {"Name: ", "Length: ", "Description: ", "Genre: ","Sell Price:", "ReleaseDate: "};
         final TextField fields[] = new TextField[attributes.length];
 
 
@@ -268,15 +268,14 @@ public class Dashboard extends Application {
                     int id = (int) (Math.random() * 9999999 + 100000);
 
                     stmt.executeUpdate("INSERT INTO product " +
-                            "(ProductID, Name, Length, Description, Genre, SellPrice, MaturityRating, ReleaseDate)" +
+                            "(ProductID, Name, Length, Description, Genre, SellPrice, ReleaseDate)" +
                             "VALUES("+ id +
                             ", '" + fields[0].getText() + "'" +
                             ", " + fields[1].getText() +
                             ", '" + fields[2].getText()+"'" +
                             ", '" + fields[3].getText() + "'" +
-                            ", " + fields[4].getText() +
-                            ", '" + fields[5].getText() + "'"+
-                            ", TO_DATE('" + fields[6].getText()+ "'" +
+                            ", '" + fields[4].getText() + "'"+
+                            ", TO_DATE('" + fields[5].getText()+ "'" +
                             ", 'yyyy/mm/dd'))");
 
                     // check if product is movie/Tv_serenes/music
