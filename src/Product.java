@@ -17,6 +17,8 @@ public class Product {
     final int SERIES = 1;
     final int MUSIC = 2;
 
+    int type;
+
     Product(int id){
         this.id = id;
         this.objs = new LinkedList<>();
@@ -58,6 +60,7 @@ public class Product {
                 // check product type
                 if(type[MOVIE] != 0){
                     // TYPE MOVIE
+                    this.type = MOVIE;
                     String cast = rs.getString("Movie_Cast");
                     String lang = rs.getString("Languages");
                     String director = rs.getString("Director");
@@ -70,7 +73,7 @@ public class Product {
 
                 }else if(type[SERIES] != 0){
                     // TYPE SERIES
-
+                    this.type = SERIES;
                     int seasons = rs.getInt("Seasons");
                     int episodes = rs.getInt("Episodes");
                     String cast = rs.getString("TV_Cast");
@@ -81,6 +84,7 @@ public class Product {
 
                 }else{
                     //TYPE MUSIC
+                    this.type = MUSIC;
                     objs.add(rs.getString("ArtistName"));
                 }
 
@@ -108,5 +112,9 @@ public class Product {
 
     public int getId() {
         return id;
+    }
+
+    public int getType() {
+        return type;
     }
 }

@@ -466,9 +466,60 @@ public class Dashboard extends Application {
                             @Override
                             public void handle(MouseEvent event) {
                                 Product product = new Product(id);
-                                LinkedList<Object> attr = product.getProduct();
+                                LinkedList<Object> attrs = product.getProduct();
 
-                                System.out.println(attr.toString());
+                                dashboard.getChildren().clear();
+
+                                int type = product.getType();
+
+                                LinkedList<String> fields = new LinkedList<>();
+                                fields.add("Name ");
+                                fields.add("Length ");
+                                fields.add("Description ");
+                                fields.add("Genre ");
+                                fields.add("SellPrice ");
+                                fields.add("ReleaseDate ");
+
+                                switch (type){
+                                    case 0:
+                                        fields.add("Movie_Casts ");
+                                        fields.add("Languages ");
+                                        fields.add("Director ");
+                                        fields.add("Country ");
+                                        fields.add("MaturityRating ");
+                                        break;
+                                    case 1:
+                                        fields.add("NO.Seasons ");
+                                        fields.add("NO.Episodes ");
+                                        fields.add("TV_Cast ");
+                                        fields.add("MaturityRating ");
+                                        fields.add("Rotten_Tomato_Rating ");
+                                        break;
+                                    default:
+                                        fields.add("Artist_Name ");
+                                        break;
+
+                                }
+
+                                int i=0;
+                                for(String field:fields){
+                                    Label l = new Label(field);
+                                    dashboard.add(l, i, 0);
+                                    i++;
+                                }
+
+                                i = 0;
+                                for (Object attr:attrs){
+                                    if(attr != null) {
+                                        Label l = new Label(attr.toString());
+                                        dashboard.add(l, i, 1);
+                                        i++;
+                                    }
+                                }
+                                dashboard.setHgap(10);
+                                dashboard.setVgap(10);
+
+
                             }
                         });
 
