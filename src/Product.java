@@ -1,9 +1,7 @@
 import javafx.scene.layout.GridPane;
 
 import java.sql.*;
-import java.util.Collection;
 import java.util.LinkedList;
-import java.util.Objects;
 
 /**
  * Created by Owner on 11/20/2019.
