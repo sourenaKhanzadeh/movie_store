@@ -23,6 +23,7 @@ import javafx.stage.Stage;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.sql.*;
+import java.util.LinkedList;
 
 /**
  * Created by Owner on 11/15/2019.
@@ -450,6 +451,8 @@ public class Dashboard extends Application {
                     VBox box = new VBox();
 
                     final String name = rs.getString("NAME");
+                    final int id = rs.getInt("ProductID");
+
                     Label nLabel = new Label(name);
                     try {
                         FileInputStream inputstream = new FileInputStream("D:\\Users\\ProgrammingProjects\\Java\\movie_store_front\\movie_poster.jpg");
@@ -462,7 +465,10 @@ public class Dashboard extends Application {
                         imageView.setOnMouseClicked(new EventHandler<MouseEvent>() {
                             @Override
                             public void handle(MouseEvent event) {
-                                System.out.println(name);
+                                Product product = new Product(id);
+                                LinkedList<Object> attr = product.getProduct();
+
+                                System.out.println(attr.toString());
                             }
                         });
 

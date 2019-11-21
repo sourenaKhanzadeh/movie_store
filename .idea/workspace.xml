@@ -7,8 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb0e1b21-33b3-4562-b04f-7fe1afdeba0f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Initiate.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Initiate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Main$1.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Main$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Main$2.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Main$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Main$3.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Main$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Main$4.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Main$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Main$userType.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Main$userType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/movie_store_front/Main.class" afterPath="$PROJECT_DIR$/out/production/movie_store_front/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Initiate.java" afterPath="$PROJECT_DIR$/src/Initiate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="movie_store_front.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,27 +59,25 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="2465">
-              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2567">
+              <caret line="145" column="58" selection-start-line="144" selection-start-column="8" selection-end-line="145" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3663#3876#0" expanded="true" />
-                <element signature="e#3875#3876#0" expanded="true" />
+                <element signature="e#3698#4181#0" expanded="true" />
+                <element signature="e#4180#4181#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0" vertical-offset="299" max-vertical-offset="1275">
-              <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3318" max-vertical-offset="4556">
+              <caret line="471" column="29" selection-start-line="471" selection-start-column="29" selection-end-line="471" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
-                <element signature="method#start#0;class#Dashboard#0" expanded="false" />
-                <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
@@ -80,50 +87,49 @@
                 <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
                 <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-                <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
-                <marker date="1574310085517" expanded="true" signature="2710:2766" placeholder="SELECT USERN..MOVIE_USER..." />
-                <marker date="1574310085517" expanded="true" signature="2710:2787" placeholder="SELECT USERN..MOVIE_USER..." />
-                <marker date="1574310085517" expanded="true" signature="3707:3747" placeholder="SELECT ADMIN..ADMIN..." />
-                <marker date="1574310085517" expanded="true" signature="7934:8136" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="7934:8319" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="7934:8383" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="7934:8454" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="7934:8530" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="false" signature="8700:8770" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="8700:8781" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="8890:8950" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="9025:9090" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="9025:9112" placeholder="INSERT INTO ..." />
-                <marker date="1574310085517" expanded="true" signature="13707:13728" placeholder="SELECT NAME ..product..." />
+                <element signature="e#14624#15034#0" expanded="true" />
+                <marker date="1574314593873" expanded="true" signature="2739:2795" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1574314593873" expanded="true" signature="2739:2816" placeholder="SELECT USERN..MOVIE_USER..." />
+                <marker date="1574314593873" expanded="true" signature="3736:3776" placeholder="SELECT ADMIN..ADMIN..." />
+                <marker date="1574314593873" expanded="true" signature="7963:8165" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="7963:8348" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="7963:8412" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="7963:8483" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="7963:8559" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="false" signature="8729:8799" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="8729:8810" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="8919:8979" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="9054:9119" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="9054:9141" placeholder="INSERT INTO ..." />
+                <marker date="1574314593873" expanded="true" signature="13736:13757" placeholder="SELECT NAME ..product..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Initiate.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Initiate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Initiate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1128" max-vertical-offset="2907">
-              <caret line="103" column="39" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.7217514" vertical-offset="1631" max-vertical-offset="2975">
+              <caret line="126" column="43" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1574309604585" expanded="true" signature="212:242" placeholder="select NAME,..TESTJDBC..." />
-                <marker date="1574309604585" expanded="true" signature="1456:1467" placeholder="DROP TABLE m..." />
-                <marker date="1574309604585" expanded="true" signature="1456:1504" placeholder="DROP TABLE C..." />
-                <marker date="1574309604585" expanded="true" signature="2071:2096" placeholder="CREATE TABLE..movie_user..." />
-                <marker date="1574309604585" expanded="true" signature="2071:2329" placeholder="CREATE TABLE..movie_user..." />
-                <marker date="1574309604585" expanded="true" signature="2071:2331" placeholder="CREATE TABLE..movie_user..." />
-                <marker date="1574309604585" expanded="true" signature="2071:2331" placeholder="CREATE TABLE..movie_user..." />
-                <marker date="1574309604585" expanded="true" signature="2372:2507" placeholder="CREATE TABLE..admin..." />
-                <marker date="1574309604585" expanded="true" signature="2559:2700" placeholder="CREATE TABLE..customer..." />
-                <marker date="1574309604585" expanded="true" signature="2752:3174" placeholder="CREATE TABLE..product..." />
-                <marker date="1574309604585" expanded="true" signature="3226:3687" placeholder="CREATE TABLE..movie..." />
-                <marker date="1574309604585" expanded="true" signature="3739:3936" placeholder="CREATE TABLE..music..." />
-                <marker date="1574309604585" expanded="true" signature="3988:4403" placeholder="CREATE TABLE..tvseries..." />
-                <marker date="1574309604585" expanded="true" signature="4455:4802" placeholder="CREATE TABLE..subscription..." />
-                <marker date="1574309604585" expanded="true" signature="4855:5079" placeholder="CREATE TABLE..streams..." />
-                <marker date="1574309604585" expanded="true" signature="5131:5416" placeholder="CREATE TABLE..manages..." />
-                <marker date="1574309604585" expanded="true" signature="5468:5823" placeholder="CREATE TABLE..purchases..." />
+                <marker date="1574310982407" expanded="true" signature="212:242" placeholder="select NAME,..TESTJDBC..." />
+                <marker date="1574310982407" expanded="true" signature="1474:1518" placeholder="DROP TABLE m..." />
+                <marker date="1574310982407" expanded="true" signature="2189:2214" placeholder="CREATE TABLE..movie_user..." />
+                <marker date="1574310982407" expanded="true" signature="2189:2447" placeholder="CREATE TABLE..movie_user..." />
+                <marker date="1574310982407" expanded="true" signature="2189:2449" placeholder="CREATE TABLE..movie_user..." />
+                <marker date="1574310982407" expanded="true" signature="2189:2449" placeholder="CREATE TABLE..movie_user..." />
+                <marker date="1574310982407" expanded="true" signature="2490:2625" placeholder="CREATE TABLE..admin..." />
+                <marker date="1574310982407" expanded="true" signature="2677:2818" placeholder="CREATE TABLE..customer..." />
+                <marker date="1574310982407" expanded="true" signature="2870:3292" placeholder="CREATE TABLE..product..." />
+                <marker date="1574310982407" expanded="true" signature="3344:3805" placeholder="CREATE TABLE..movie..." />
+                <marker date="1574310982407" expanded="true" signature="3857:4054" placeholder="CREATE TABLE..music..." />
+                <marker date="1574310982407" expanded="true" signature="4106:4521" placeholder="CREATE TABLE..tvseries..." />
+                <marker date="1574310982407" expanded="true" signature="4573:4920" placeholder="CREATE TABLE..subscription..." />
+                <marker date="1574310982407" expanded="true" signature="4973:5197" placeholder="CREATE TABLE..streams..." />
+                <marker date="1574310982407" expanded="true" signature="5249:5534" placeholder="CREATE TABLE..manages..." />
+                <marker date="1574310982407" expanded="true" signature="5586:5941" placeholder="CREATE TABLE..purchases..." />
               </folding>
             </state>
           </provider>
@@ -132,9 +138,11 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1093" max-vertical-offset="2550">
-              <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+              <caret line="125" column="52" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
               <folding>
+                <element signature="method#menu#0;class#User#0" expanded="false" />
+                <element signature="method#addToDataBase#0;class#User#0" expanded="false" />
                 <marker date="1573841528496" expanded="true" signature="4097:4429" placeholder="INSERT INTO ..." />
                 <marker date="1573841528496" expanded="true" signature="4575:4619" placeholder="INSERT INTO ..." />
                 <marker date="1573841528496" expanded="true" signature="4715:4765" placeholder="INSERT INTO ..." />
@@ -146,18 +154,8 @@
       <file leaf-file-name="Oracle - @localhost" pinned="false" current-in-tab="false">
         <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1836">
-              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="3009">
-              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+            <state vertical-scroll-proportion="-3.5172415" vertical-offset="306" max-vertical-offset="1904">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -169,6 +167,7 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="596" max-vertical-offset="1479">
               <caret line="85" column="5" selection-start-line="16" selection-start-column="7" selection-end-line="85" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
               </folding>
             </state>
@@ -189,11 +188,14 @@
         <option value="$PROJECT_DIR$/src/dashboard.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/halfway.xml" />
-        <option value="db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/" />
         <option value="$PROJECT_DIR$/run.sh" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Initiate.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/product.java" />
+        <option value="db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/" />
         <option value="$PROJECT_DIR$/src/Dashboard.java" />
+        <option value="$PROJECT_DIR$/src/Product.java" />
       </list>
     </option>
   </component>
@@ -244,10 +246,6 @@
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -270,6 +268,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movie_store_front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movie_store_front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,6 +655,11 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -655,12 +676,12 @@
       <workItem from="1573921281752" duration="4540000" />
       <workItem from="1574274856660" duration="650000" />
       <workItem from="1574276014013" duration="734000" />
-      <workItem from="1574287342240" duration="5216000" />
+      <workItem from="1574287342240" duration="9687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62730000" />
+    <option name="totallyTimeSpent" value="67201000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -699,6 +720,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18939394" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -713,7 +735,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -766,7 +787,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -781,8 +802,8 @@
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -794,8 +815,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#start#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
@@ -805,21 +824,21 @@
             <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
-            <marker date="1574310085517" expanded="true" signature="2710:2766" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="2710:2787" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="3707:3747" placeholder="SELECT ADMIN..ADMIN..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8136" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8319" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8383" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8454" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8530" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="false" signature="8700:8770" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8700:8781" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8890:8950" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9090" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9112" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="13707:13728" placeholder="SELECT NAME ..product..." />
+            <element signature="e#14624#15034#0" expanded="true" />
+            <marker date="1574314593873" expanded="true" signature="2739:2795" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="2739:2816" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="3736:3776" placeholder="SELECT ADMIN..ADMIN..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8165" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8348" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8412" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8483" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8559" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="false" signature="8729:8799" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8729:8810" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8919:8979" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9119" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9141" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="13736:13757" placeholder="SELECT NAME ..product..." />
           </folding>
         </state>
       </provider>
@@ -845,6 +864,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1479">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
           </folding>
         </state>
@@ -856,8 +876,8 @@
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -869,8 +889,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#start#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
@@ -880,21 +898,21 @@
             <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
-            <marker date="1574310085517" expanded="true" signature="2710:2766" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="2710:2787" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="3707:3747" placeholder="SELECT ADMIN..ADMIN..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8136" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8319" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8383" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8454" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8530" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="false" signature="8700:8770" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8700:8781" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8890:8950" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9090" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9112" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="13707:13728" placeholder="SELECT NAME ..product..." />
+            <element signature="e#14624#15034#0" expanded="true" />
+            <marker date="1574314593873" expanded="true" signature="2739:2795" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="2739:2816" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="3736:3776" placeholder="SELECT ADMIN..ADMIN..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8165" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8348" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8412" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8483" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8559" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="false" signature="8729:8799" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8729:8810" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8919:8979" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9119" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9141" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="13736:13757" placeholder="SELECT NAME ..product..." />
           </folding>
         </state>
       </provider>
@@ -912,6 +930,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1479">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
           </folding>
         </state>
@@ -923,8 +942,8 @@
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,8 +955,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#start#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
@@ -947,21 +964,21 @@
             <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
-            <marker date="1574310085517" expanded="true" signature="2710:2766" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="2710:2787" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="3707:3747" placeholder="SELECT ADMIN..ADMIN..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8136" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8319" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8383" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8454" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8530" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="false" signature="8700:8770" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8700:8781" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8890:8950" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9090" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9112" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="13707:13728" placeholder="SELECT NAME ..product..." />
+            <element signature="e#14624#15034#0" expanded="true" />
+            <marker date="1574314593873" expanded="true" signature="2739:2795" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="2739:2816" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="3736:3776" placeholder="SELECT ADMIN..ADMIN..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8165" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8348" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8412" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8483" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8559" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="false" signature="8729:8799" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8729:8810" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8919:8979" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9119" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9141" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="13736:13757" placeholder="SELECT NAME ..product..." />
           </folding>
         </state>
       </provider>
@@ -979,6 +996,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1479">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
           </folding>
         </state>
@@ -990,8 +1008,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1003,8 +1021,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#start#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
@@ -1014,21 +1030,21 @@
             <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
-            <marker date="1574310085517" expanded="true" signature="2710:2766" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="2710:2787" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="3707:3747" placeholder="SELECT ADMIN..ADMIN..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8136" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8319" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8383" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8454" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8530" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="false" signature="8700:8770" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8700:8781" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8890:8950" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9090" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9112" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="13707:13728" placeholder="SELECT NAME ..product..." />
+            <element signature="e#14624#15034#0" expanded="true" />
+            <marker date="1574314593873" expanded="true" signature="2739:2795" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="2739:2816" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="3736:3776" placeholder="SELECT ADMIN..ADMIN..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8165" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8348" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8412" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8483" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8559" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="false" signature="8729:8799" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8729:8810" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8919:8979" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9119" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9141" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="13736:13757" placeholder="SELECT NAME ..product..." />
           </folding>
         </state>
       </provider>
@@ -1046,6 +1062,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1479">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
           </folding>
         </state>
@@ -1057,8 +1074,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1068,6 +1085,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1564">
           <caret line="27" column="82" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
           </folding>
         </state>
@@ -1086,8 +1104,8 @@
           <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1105,8 +1123,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1162,26 +1180,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="896">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1836">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Owner/Downloads/JdbcOracleConnectionTemplate (2) (1).java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="596" max-vertical-offset="1479">
           <caret line="85" column="5" selection-start-line="16" selection-start-column="7" selection-end-line="85" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1573836915842" expanded="true" signature="1963:1993" placeholder="select NAME,..TESTJDBC..." />
           </folding>
         </state>
@@ -1189,72 +1193,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="3009">
+        <state vertical-scroll-proportion="-1.3290961" vertical-offset="2301" max-vertical-offset="3009">
           <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/User.java">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1246" max-vertical-offset="2550">
-          <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
-          <folding>
-            <marker date="1573841528496" expanded="true" signature="4097:4429" placeholder="INSERT INTO ..." />
-            <marker date="1573841528496" expanded="true" signature="4575:4619" placeholder="INSERT INTO ..." />
-            <marker date="1573841528496" expanded="true" signature="4715:4765" placeholder="INSERT INTO ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.018973215" vertical-offset="0" max-vertical-offset="896">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Initiate.java">
+    <entry file="dbDummy://db-console:/6dfe5265/e6913ddc-1bf5-4d89-9f5f-b83a0848dfbe/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1128" max-vertical-offset="2907">
-          <caret line="103" column="39" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1574309604585" expanded="true" signature="212:242" placeholder="select NAME,..TESTJDBC..." />
-            <marker date="1574309604585" expanded="true" signature="1456:1467" placeholder="DROP TABLE m..." />
-            <marker date="1574309604585" expanded="true" signature="1456:1504" placeholder="DROP TABLE C..." />
-            <marker date="1574309604585" expanded="true" signature="2071:2096" placeholder="CREATE TABLE..movie_user..." />
-            <marker date="1574309604585" expanded="true" signature="2071:2329" placeholder="CREATE TABLE..movie_user..." />
-            <marker date="1574309604585" expanded="true" signature="2071:2331" placeholder="CREATE TABLE..movie_user..." />
-            <marker date="1574309604585" expanded="true" signature="2071:2331" placeholder="CREATE TABLE..movie_user..." />
-            <marker date="1574309604585" expanded="true" signature="2372:2507" placeholder="CREATE TABLE..admin..." />
-            <marker date="1574309604585" expanded="true" signature="2559:2700" placeholder="CREATE TABLE..customer..." />
-            <marker date="1574309604585" expanded="true" signature="2752:3174" placeholder="CREATE TABLE..product..." />
-            <marker date="1574309604585" expanded="true" signature="3226:3687" placeholder="CREATE TABLE..movie..." />
-            <marker date="1574309604585" expanded="true" signature="3739:3936" placeholder="CREATE TABLE..music..." />
-            <marker date="1574309604585" expanded="true" signature="3988:4403" placeholder="CREATE TABLE..tvseries..." />
-            <marker date="1574309604585" expanded="true" signature="4455:4802" placeholder="CREATE TABLE..subscription..." />
-            <marker date="1574309604585" expanded="true" signature="4855:5079" placeholder="CREATE TABLE..streams..." />
-            <marker date="1574309604585" expanded="true" signature="5131:5416" placeholder="CREATE TABLE..manages..." />
-            <marker date="1574309604585" expanded="true" signature="5468:5823" placeholder="CREATE TABLE..purchases..." />
-          </folding>
+        <state vertical-scroll-proportion="-3.5172415" vertical-offset="306" max-vertical-offset="1904">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1569" max-vertical-offset="2465">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="2567">
+          <caret line="145" column="58" selection-start-line="144" selection-start-column="8" selection-end-line="145" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3663#3876#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3698#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0" vertical-offset="299" max-vertical-offset="1275">
-          <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3318" max-vertical-offset="4556">
+          <caret line="471" column="29" selection-start-line="471" selection-start-column="29" selection-end-line="471" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Dashboard#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#start#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#checkUserExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userExist#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createTopMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createMenu#0;class#Dashboard#0" expanded="false" />
@@ -1264,21 +1243,77 @@
             <element signature="method#productDash#0;class#Dashboard#0" expanded="false" />
             <element signature="method#createOptionMenu#0;class#Dashboard#0" expanded="false" />
             <element signature="method#userNotExits#0;class#Dashboard#0" expanded="false" />
-            <element signature="method#queryProducts#0;class#Dashboard#0" expanded="false" />
-            <marker date="1574310085517" expanded="true" signature="2710:2766" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="2710:2787" placeholder="SELECT USERN..MOVIE_USER..." />
-            <marker date="1574310085517" expanded="true" signature="3707:3747" placeholder="SELECT ADMIN..ADMIN..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8136" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8319" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8383" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8454" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="7934:8530" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="false" signature="8700:8770" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8700:8781" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="8890:8950" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9090" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="9025:9112" placeholder="INSERT INTO ..." />
-            <marker date="1574310085517" expanded="true" signature="13707:13728" placeholder="SELECT NAME ..product..." />
+            <element signature="e#14624#15034#0" expanded="true" />
+            <marker date="1574314593873" expanded="true" signature="2739:2795" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="2739:2816" placeholder="SELECT USERN..MOVIE_USER..." />
+            <marker date="1574314593873" expanded="true" signature="3736:3776" placeholder="SELECT ADMIN..ADMIN..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8165" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8348" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8412" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8483" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="7963:8559" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="false" signature="8729:8799" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8729:8810" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="8919:8979" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9119" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="9054:9141" placeholder="INSERT INTO ..." />
+            <marker date="1574314593873" expanded="true" signature="13736:13757" placeholder="SELECT NAME ..product..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1071">
+          <caret line="125" column="52" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
+          <folding>
+            <element signature="method#menu#0;class#User#0" expanded="false" />
+            <element signature="method#addToDataBase#0;class#User#0" expanded="false" />
+            <marker date="1573841528496" expanded="true" signature="4097:4429" placeholder="INSERT INTO ..." />
+            <marker date="1573841528496" expanded="true" signature="4575:4619" placeholder="INSERT INTO ..." />
+            <marker date="1573841528496" expanded="true" signature="4715:4765" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1129944" vertical-offset="0" max-vertical-offset="2006">
+          <caret line="88" column="68" selection-start-line="88" selection-start-column="68" selection-end-line="88" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <marker date="1574314758446" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1574314758446" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1574314758446" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1574314758446" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..product..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Initiate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7217514" vertical-offset="1631" max-vertical-offset="2975">
+          <caret line="126" column="43" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1574310982407" expanded="true" signature="212:242" placeholder="select NAME,..TESTJDBC..." />
+            <marker date="1574310982407" expanded="true" signature="1474:1518" placeholder="DROP TABLE m..." />
+            <marker date="1574310982407" expanded="true" signature="2189:2214" placeholder="CREATE TABLE..movie_user..." />
+            <marker date="1574310982407" expanded="true" signature="2189:2447" placeholder="CREATE TABLE..movie_user..." />
+            <marker date="1574310982407" expanded="true" signature="2189:2449" placeholder="CREATE TABLE..movie_user..." />
+            <marker date="1574310982407" expanded="true" signature="2189:2449" placeholder="CREATE TABLE..movie_user..." />
+            <marker date="1574310982407" expanded="true" signature="2490:2625" placeholder="CREATE TABLE..admin..." />
+            <marker date="1574310982407" expanded="true" signature="2677:2818" placeholder="CREATE TABLE..customer..." />
+            <marker date="1574310982407" expanded="true" signature="2870:3292" placeholder="CREATE TABLE..product..." />
+            <marker date="1574310982407" expanded="true" signature="3344:3805" placeholder="CREATE TABLE..movie..." />
+            <marker date="1574310982407" expanded="true" signature="3857:4054" placeholder="CREATE TABLE..music..." />
+            <marker date="1574310982407" expanded="true" signature="4106:4521" placeholder="CREATE TABLE..tvseries..." />
+            <marker date="1574310982407" expanded="true" signature="4573:4920" placeholder="CREATE TABLE..subscription..." />
+            <marker date="1574310982407" expanded="true" signature="4973:5197" placeholder="CREATE TABLE..streams..." />
+            <marker date="1574310982407" expanded="true" signature="5249:5534" placeholder="CREATE TABLE..manages..." />
+            <marker date="1574310982407" expanded="true" signature="5586:5941" placeholder="CREATE TABLE..purchases..." />
           </folding>
         </state>
       </provider>

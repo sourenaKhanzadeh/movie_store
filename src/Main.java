@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -128,8 +129,13 @@ public class Main  extends Application{
             @Override
             public void handle(ActionEvent event) {
                 Initiate init = new Initiate();
-
                 init.initiate();
+
+                // Alert the user
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setTitle("Initiation Successful");
+                alert.setHeaderText("restarted/initiated tables....");
+                alert.showAndWait();
             }
         });
 

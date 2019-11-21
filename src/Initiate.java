@@ -34,19 +34,23 @@ public class Initiate {
 
             if (conn1 != null) {
                 Statement stat = conn1.createStatement();
-                for (int i = 0; i < tables.length; i++) {
-                    stat.execute("DROP TABLE " + tables[i] + " CASCADE CONSTRAINTS");
+                try {
+                    for (String table : tables) {
+                        stat.execute("DROP TABLE " + table + " CASCADE CONSTRAINTS");
+                    }
+
+                }catch (Exception e){
+                    System.out.println("Error: " + e.getMessage());
+                }finally{
+                    creteTables(stat);
                 }
 
-                creteTables(stat);
             }
 
 
 
 
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             ex.printStackTrace();
         } finally {
             try {
